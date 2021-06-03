@@ -1,0 +1,13 @@
+:root{
+    --main-red: #c01e2e;
+    --ligth-gray: #414042;
+
+}
+
+.red{
+    background: var(--main-red) !important;
+}
+
+.gray{
+    background: var(--ligth-gray);
+}

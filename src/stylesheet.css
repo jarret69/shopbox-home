@@ -29,6 +29,17 @@ a {
 	text-decoration: none;
 	color: #000;
 }
+h2{
+	font-size: 48px !important;
+	line-height: 1.24 !important;
+    letter-spacing: -0.04em !important;
+}p{
+	font-size: 18px !important;
+    line-height: 1.5 !important;
+    letter-spacing: -0.6px !important;
+    font-weight: 400 !important;
+}
+
 *:focus {
   outline: 0;
 }
@@ -38,3 +49,60 @@ a {
 	margin: 0 auto;
 	padding: 0 2rem;
 }
+
+.btn{
+	font-size: 1.6em !important;
+	width: 14rem;
+	border: solid 2px var(--main-red) !important;
+	margin: auto;
+
+}
+
+.three{
+	padding: 8rem !important;
+    background-color: #f2f4fa;
+}
+
+.info-card{
+	background-color: #fff;
+	padding: 3rem 0.1rem 3rem 0.1rem;
+    width: 80%;
+    margin: auto;
+  }
+
+.info-text{
+	padding: 5rem !important;
+}
+.info-text h2{
+	font-size: 48px;
+	line-height: 1.24;
+    letter-spacing: -0.04em;
+}
+.info-text p{
+	font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: -0.6px;
+    font-weight: 400;
+}
+
+.info-image{
+    /*background-color: var(--main-red);*/
+	border-radius: 5px;
+	box-shadow: 10px 10px 32px -10px rgb(27 60 185 / 40%), 32px 32px var(--main-red);
+}
+
+.padding-info{
+	padding: 4rem !important;
+	
+}
+
+.mg-right{
+	margin-right: 19rem !important;
+}
+
+.fl-right{
+	float: right !important;
+}
+
+
+

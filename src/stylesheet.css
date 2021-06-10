@@ -22,8 +22,10 @@ html {
 	font-size: calc(4px + 0.45vw);
 }
 body {
+	max-width: 1920px !important;
 	font-family: 'Montserrat', sans-serif;
 	color: #000;
+	overflow-x: hidden;
 }
 a {
 	text-decoration: none;
@@ -45,9 +47,10 @@ h2{
 }
 
 .main {
-	max-width: 114.9rem;
+	
 	margin: 0 auto;
-	padding: 0 2rem;
+	padding: 0 0;
+	overflow: hidden !important;
 }
 
 .btn{
@@ -103,6 +106,94 @@ h2{
 .fl-right{
 	float: right !important;
 }
+.inner-container{
+   background-image: url(./media/ShopBox_Jamaic-4.png);
+   margin-left: 13rem !important;
+   background-repeat: no-repeat;
+    width: 724px;
+    height: 524px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 10px 10px 32px -10px rgb(185 27 78 / 40%), 32px 32px var(--main-red);
+}
 
+.inner-container .inner img{
+    width: 400px;
+    margin-top: 23rem !important;
+}
 
+.border-left{
+	border-radius: 5px;
+    box-shadow: 10px 10px 32px -10px rgb(185 27 78 / 40%), -32px 32px var(--main-red);
+}
+.border-right{
+	border-radius: 5px;
+    box-shadow: 10px 10px 32px -10px rgb(185 27 78 / 40%), 32px 32px var(--main-red);
+}
+.container-gap{
+    margin-top: 9.5rem !important;
+}
 
+.seven{
+	
+	background-color: #f2f4fa !important;
+}
+
+.qanda{
+	
+	background: url(./media/faq-background.png);
+	background-color: #f2f4fa !important;
+	background-repeat: no-repeat;
+	/*position: absolute;*/
+    /*inset: 330px 0px 0px;*/
+	background-size: 1490px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#accordionExample{
+    width: 60% !important;
+	padding-top:10rem;
+	padding-bottom: 10rem;
+    margin: auto;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff !important;
+    background-color: var(--main-red) !important;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+	
+}
+.accordion-button:focus {
+    z-index: 3;
+    border-color: var(--main-red) !important;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+.accordion-body{
+	font-size: 1.5em !important;
+}
+.accordion-button{
+	font-size: 0.6em !important;
+}
+
+footer{
+	color: #fff;
+	background-color: var(--ligth-gray);
+}
+footer p{
+	color: #fff;
+	
+}
+footer a{
+	color: #fff;
+	
+}
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) {
+	.row{
+		width: fit-content !important;
+	}
+}

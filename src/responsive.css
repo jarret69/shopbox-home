@@ -1,0 +1,115 @@
+
+
+
+
+ @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+     main{
+         width:1000px;
+         margin:auto;
+         position:relative;
+     }
+     
+     
+
+    .card-sm__container {
+       margin: 0 !important;
+      
+    }
+
+    .info-card{
+        margin: auto !important;
+        width: fit-content !important;
+      }
+
+      .info-text{
+          width: 100% !important;
+      }
+
+      .row .c-txt{
+        width: 100% !important;
+        font-size: 2em;
+        text-align: -webkit-center;
+        padding-bottom: 9rem !important;
+        padding-top: 9rem !important;
+      }
+
+      .btn{
+        width: 100% !important;
+        color: #fff!important;
+        background: #c01e2e!important;
+        font-size: 52px!important;
+    }
+    .five .row{
+        flex-direction: column-reverse !important;
+    }
+
+    #accordionExample {
+        width: 90% !important;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        margin: auto;
+    }
+    
+    .accordion-button{
+        font-size:1.3em !important;
+    }
+    
+    .accordion-body{
+        font-size: 6.8em !important;
+    }
+ }
+
+
+/*@media only screen and (min-width : 321px) {
+   main{
+         width:1000px;
+         margin:auto;
+         position:relative;
+     }
+     
+
+    .card-sm__container {
+       margin: 0 !important;
+      
+    }
+
+    .info-card{
+        margin: auto !important;
+        width: fit-content !important;
+      }
+
+      .info-text{
+          width: 100% !important;
+      }
+
+      .col-4{
+        width: 100% !important;
+        font-size: 2em;
+        text-align: -webkit-center;
+        padding-bottom: 9rem !important;
+        padding-top: 9rem !important;
+      }
+
+      .btn{
+        width: 100% !important;
+        color: #fff!important;
+        background: #c01e2e!important;
+        font-size: 52px!important;
+    }
+    .five .row{
+        flex-direction: column-reverse !important;
+    }
+
+    #accordionExample {
+        width: 90% !important;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        margin: auto;
+    }
+}
+   */
+    
+
+
+
+

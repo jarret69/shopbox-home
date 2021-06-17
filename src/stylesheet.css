@@ -5,6 +5,10 @@
     --main-red: #c01e2e;
     --ligth-gray: #414042;
 
+}  
+
+*{
+	box-sizing: border-box !important;
 }
 
 .red{
@@ -27,9 +31,15 @@ body {
 	color: #000;
 	overflow-x: hidden;
 }
-a {
-	text-decoration: none;
-	color: #000;
+a{
+	text-decoration: none !important;
+	color: var(--main-red) !important;
+	outline: none !important;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -ms-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
 }
 h2{
 	font-size: 48px !important;
@@ -46,8 +56,20 @@ h2{
   outline: 0;
 }
 
+.main-logo{
+    
+    width:160px !important;
+    height:60px !important;
+    object-fit: contain !important;
+}
+.logo{
+    width:200px !important;
+    height:60px !important;
+    object-fit: contain !important;
+}
 .main {
-	
+	width: 100%;
+    overflow: hidden;
 	margin: 0 auto;
 	padding: 0 0;
 	overflow: hidden !important;
@@ -66,12 +88,14 @@ h2{
     background-color: #f2f4fa;
 }
 
+
 .info-card{
 	background-color: #fff;
 	padding: 3rem 0.1rem 3rem 0.1rem;
     width: 80%;
     margin: auto;
   }
+  
 
 .info-text{
 	padding: 5rem !important;
@@ -106,21 +130,13 @@ h2{
 .fl-right{
 	float: right !important;
 }
-.inner-container{
-   background-image: url(./media/ShopBox_Jamaic-4.png);
-   margin-left: 13rem !important;
-   background-repeat: no-repeat;
-    width: 724px;
-    height: 524px;
-    object-fit: cover;
+
+
+/*.inner-container .inner img{
+    
     border-radius: 5px;
     box-shadow: 10px 10px 32px -10px rgb(185 27 78 / 40%), 32px 32px var(--main-red);
-}
-
-.inner-container .inner img{
-    width: 400px;
-    margin-top: 23rem !important;
-}
+}*/
 
 .border-left{
 	border-radius: 5px;
@@ -160,10 +176,25 @@ h2{
 
 .accordion-button:not(.collapsed) {
     color: #fff !important;
-    background-color: var(--main-red) !important;
-    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+    background: rgba( 192, 30, 46, 0.60 ) !important;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%) !important;
+    backdrop-filter: blur( 10.0px ) !important;
+    -webkit-backdrop-filter: blur( 10.0px ) !important;
+    /*border-radius: 10px;*/
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
 	
 }
+
+.accordion-button{
+    background: rgba(255, 255, 255, 0.72) !important;
+    box-shadow: 0 8px 32px 0 rgba(212, 212, 216, 0.116) !important;
+    backdrop-filter: blur( 7.5px ) !important;
+    -webkit-backdrop-filter: blur( 7.5px ) !important;
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
 .accordion-button:focus {
     z-index: 3;
     border-color: var(--main-red) !important;
@@ -175,6 +206,15 @@ h2{
 }
 .accordion-button{
 	font-size: 0.6em !important;
+}
+
+.accordion-item{
+   background: rgba( 255, 255, 255, 0.35 ) !important;
+   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ) !important;
+   backdrop-filter: blur( 7.5px ) !important;
+   -webkit-backdrop-filter: blur( 7.5px ) !important;
+   border-radius: 10px;
+   border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 footer{
@@ -189,6 +229,28 @@ footer a{
 	color: #fff;
 	
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--main-red); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:var(--ligth-gray); 
+}
+
 @media screen 
   and (device-width: 360px) 
   and (device-height: 640px) 

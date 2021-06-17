@@ -9,8 +9,8 @@
 	width: 100%;
 	height: 540px;
 	padding: 0 0 32px;
-	display: grid;
-    grid-template-columns: repeat(2, 1fr);
+	display: flex;
+    flex-wrap: wrap;
 	/*display: flex;
 	flex-direction: row;
 	flex-grow: 2;*/
@@ -65,7 +65,7 @@
 
   }
   .logo{
-	opacity: 50%;
+	opacity: 95%;
   }
   
   /*...large...*/
@@ -101,6 +101,7 @@
   /*...small...*/
   .card-sm__container {
 	height: 232px;
+	margin-left: 3%;
 	/*margin: 0 -88px 0 0;*/
 	display: flex;
 	align-self: flex-end;

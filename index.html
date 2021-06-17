@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <meta name="viewport" content="width=1000; user-scalable=0;" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <title>ShopBox Group</title>
     <link rel="stylesheet" href="./src/stylesheet.css">
+    <link rel="stylesheet" href="./src/responsive.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oswald:700|Montserrat:700'><link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-</head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     
 <body>
     <main>
         <section class="one">
@@ -20,7 +22,7 @@
                 <div class="row">
                   <div class="col-sm-8 col-md-7 py-4">
                     <h4 class="text-white">About</h4>
-                    <p class="text-muted">Shopbox Marketplace, a part of Interlinc Solutions Ja Ltd. provides an online shopping experience and door to door delivery for our customers.  For over 18 years, Interlinc Solutions have been serving our customers in the area of distribution and logistics and now through Shopbox provides a simple, reliable way to shop online and ship your purchases to you. We deliver a streamlined and cost-effective shipping process that guarantees your products are boxed and delivered to you in the shortest possible time.</p>
+                    <p class="text-muted">Shopbox Marketplace, a part of Interlinc Solutions Ja Ltd. provides an online shopping experience and door to door delivery for our customers.  For over 20 years, Interlinc Solutions have been serving our customers in the area of distribution and logistics and now through Shopbox provides a simple, reliable way to shop online and ship your purchases to you. We deliver a streamlined and cost-effective shipping process that guarantees your products are boxed and delivered to you in the shortest possible time.</p>
                   </div>
                   <div class="col-sm-4 offset-md-1 py-4">
                     <h4 class="text-white">Contact</h4>
@@ -36,7 +38,7 @@
             <div class="navbar navbar-dark red shadow-sm">
               <div class="container">
                 <a href="#" class="navbar-brand d-flex align-items-center">
-                  <img src="/src/media/NEW-MARKET-LOGO-WHITE.png" width="150" height="30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                  <img class="main-logo" src="/src/media/NEW-MARKET-LOGO-WHITE.png" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
                   
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,7 +50,7 @@
         </section>
         <section class="two">
           <div class="sec-three">
-            <div class="card-lg__container">
+            <div class="card-lg__container animate__animated animate__fadeInLeft">
               <p class="card__text-sm">Welcome to</p>
               <h1 class="card__text-lg">ShopBox<br /> Marketplace</h1>
               <p class="card__text-md">Say hello to a new, seamless online shopping experience!</p>
@@ -56,26 +58,33 @@
             </div>
           
           
-            <div class="card-sm__container">
+            <div class="card-sm__container animate__animated animate__fadeInTopRight animate__delay-1s">
+             
               <!--- START: CARD --->
-              <div class="card-sm" style="background-image:url('https://www.theunagency.org/shopbox/src/media/ezgif.com-gif-maker.gif')">
-                <p class="card__text-sm">The onle tab you need</p>
-                <img class="card__text-lg logo" src="http://shopboxmarketplace.com/dist/img/Shopbox%20it-2.png" width="200">
-              </div>
-              <!--- END: CARD --->
-          
-              <!--- START: CARD --->
-              <div class="card-sm" style="background-image: url('https://www.theunagency.org/shopbox/src/media/phone-mockup.gif'); background-position: center right;">
-                <p class="card__text-sm">Japan Alps</p>
-                <img class="card__text-lg logo" src="http://shopboxmarketplace.com/dist/img/NEW-MOBILE-LOGO-WHITE.png" width="200">
-              </div>
-              <!--- END: CARD --->
-          
-              <!--- START: CARD --->
-              <div class="card-sm" style="background-image: url('https://www.theunagency.org/shopbox/src/media/ezgif.com-gif-maker-delivery.gif')">
-                <p class="card__text-sm">Sierra Nevada - USA</p>
+              <a href="#local-shop">
+              <div class="card-sm" style="background-image: url('./src/media/ezgif.com-gif-maker-delivery.gif')">
+                <p class="card__text-sm">Have your Groceries and Pharmaceutical delivered to you </p>
                 <img class="card__text-lg logo" src="http://shopboxmarketplace.com/dist/img/NEW-LOCAL-LOGO-WHITE.png" width="200">
               </div>
+              </a>
+              <!--- END: CARD --->
+              
+               <!--- START: CARD --->
+              <a href="#box-it">
+              <div class="card-sm" style="background-image:url('./src/media/ezgif.com-gif-maker.gif')">
+                <p class="card__text-sm">The best shopping experience across multiple marketplaces.</p>
+                <img class="card__text-lg logo" src="./src/media/NEW-IT-LOGO-WHITE.png" width="200">
+              </div>
+              </a>
+              <!--- END: CARD --->
+          
+              <!--- START: CARD --->
+              <a href="#shop-mobile">
+              <div class="card-sm" style="background-image: url('./src/media/phone-mockup.gif'); background-position: center right;">
+                <p class="card__text-sm">The new and exciting way to purchase your mobile devices online </p>
+                <img class="card__text-lg logo" src="http://shopboxmarketplace.com/dist/img/NEW-MOBILE-LOGO-WHITE.png" width="200">
+              </div>
+              </a>
               <!--- END: CARD --->
           
               <!--- START: CARD 
@@ -91,11 +100,11 @@
         </section>
         <section class="three container-fluid">
           <div class="info-card row align-items-center" style="margin: auto !important;">
-            <div class="info-text col-5">
+            <div class="info-text col" data-aos="fade-right">
               <h2>What we offer</h2>
               <p>Whether you are shopping from International stores like Amazon, Ebay, Walmart or Ikea, or browsing for a new mobile phone or shopping for groceries - we've got you covered. 
-                We provide a wide range of products from stores and brands you trust ! With ShopBox, we take the hassle out of shopping online.</p>
-                <button class="btn">Have Questions?</button>
+                We provide a wide range of products from stores and brands you trust!<br /> With ShopBox, we take the hassle out of shopping online.</p>
+                <a class="btn" href="#headingfour">Have Questions?</a>
             </div>
             <div class="info-image col">
               <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/ae0f5b120832501.60b945ec67713.gif" alt="" width="600" height="415">
@@ -103,16 +112,20 @@
 
           </div>
         </section>
-        <section class="four container-fluid">
+        <section class="four container">
            <div class="padding-info row">
-             <div class="col-4">
-               <h2><img src="./src/media/SHOPBOX IT_LOGO-01.png" alt="shopbox it" width="370"></h2>
-               <p style="font-size: 3.3em !important;">Shop from top international online stores using<br /> ShopBox it</p>
+             <div class="col c-txt" data-aos="fade-right">
+               <h2><img id="box-it" src="./src/media/SHOPBOX IT_LOGO-01.png" alt="shopbox it" width="370"></h2>
+               <p style="font-size: 3.3em !important;">Shop from top international online stores using <a href="shopboxit.com"> ShopBoxit.com</a>
+               <img  id="boxanima" src="./src/./media/Logos-at.gif" alt="Brands" width="360px"><br />
+               </p>
+               
+                <a class="btn" href="https://www.shopboxit.com" target>Shop Now</a>
              </div>
-             <div class="col">
+             <div class="col" data-aos="fade-left">
                 <div class="inner-container">
                   <div class="inner">
-                      <!--img src="./src/media/laptop-9125.png" alt="Laptop"--> 
+                      <img  class="fl-right border-right" src="./src/./media/ShopBox_Jamaic-4.png" alt="Laptop" width="600"> 
                   </div>
                 </div>
              </div>
@@ -120,12 +133,15 @@
         </section>
         <section class="five container container-gap">
           <div class="row gx-5">
-            <div class="col">
-              <img class="border-left" src="./src/media/shpopbox-grocery-Recovered.png" alt="" width="700">
+
+            <div class="col" data-aos="fade-right">
+              <img class="border-left" src="./src/media/Mobile-3087.png" alt="" width="600">
             </div>
-            <div class="col-4 padding-info">
-              <h2>ShopBox Local</h2>
-              <p  style="font-size: 3.3em !important;">Your one stop shop for all your local needs! have your groceries or phormaceuticals delivered to your door</p>
+
+            <div class="col padding-info c-txt" data-aos="fade-left">
+              <h2 id="local-shop"><img id="box-it" src="./src/media/NEW-MOBILE-1-LOGO.png" alt="ShopBox Local" width="370"></h2>
+              <p  style="font-size: 3.3em !important;">Purchase your brand new Phone, Tablet or Laptop on ShopBox Mobile and have it delivered right to your door.</p>
+               <a class="btn" href="https://shopboxmobile.com/">Shop Now</a>
             </div>
           </div>
             
@@ -133,19 +149,23 @@
        </section>
        <section class="six container container-gap">
         <div class="row gx-5">
-          <div class="col-4 padding-info ">
-            <h2>ShopBox Mobile</h2>
-            <p  style="font-size: 3.3em !important;">Purchase your new Phone, Tablet or laptop on ShopBox Mobile and have it delivered to your door</p>
+
+          <div class="col padding-info c-txt" data-aos="fade-right">
+            <h2 id="shop-mobile"><img id="box-it" src="./src/media/NEW-local-LOGO.png" alt="ShopBox Mobile" width="370"></h2>
+            <p  style="font-size: 3.3em !important;"> Your one stop shop for all your local needs!<br /> Have your groceries or Pharmaceuticals delivered right to your door.</p>
+             <a class="btn" href="#" target="blank">Coming Soon</a>
           </div>
-          <div class="fl-right col">
-            <img class="fl-right border-right" src="./src/media/Mobile-3087.png" alt="" width="600">
+
+          <div class="fl-right col" data-aos="fade-left">
+            <img class="fl-right border-right" src="./src/media/shpopbox-grocery-Recovered.png" alt="" width="600">
           </div>
+
         </div>
      </section>
      <section class=" seven container-fluid container-gap">
       <div class="qanda">
         <h2 style="text-align: center; padding-top:4rem;">Frequently Asked Questions</h2>
-        <div class="accordion" id="accordionExample">
+        <div class="accordion" id="accordionExample" data-aos="zoom-in-up">
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -194,11 +214,11 @@
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingfour">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
                 How to contact customer service?
               </button>
             </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
               <div class="accordion-body">
      
                   <strong>Q: How to contact customer service?</strong><br>
@@ -217,11 +237,11 @@
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingfive">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
                 How can I order?
               </button>
             </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive" data-bs-parent="#accordionExample">
               <div class="accordion-body">
                   <strong>Q: How can I order?</strong><br>
           
@@ -249,5 +269,7 @@
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="src/Module/e-commerce-product-slider/dist/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="src/main.js"></script>
 </body>
 </html>
